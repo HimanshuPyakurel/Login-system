@@ -110,7 +110,6 @@ class Login:
         btn3=Button(frame_input2,command=self.loginform,text="Already Registered?Login",cursor="hand2",font=("calibri",10),bg='white',fg="black",bd=0)
         btn3.place(x=110,y=390)
 
-
     def register(self):
 
         if self.entry.get()==""or self.entry2.get()==""or self.entry3.get()==""or self.entry4.get()=="":
@@ -139,7 +138,6 @@ class Login:
             except Exception as es:
                 messagebox.showerror("Error",f"Error due to:{str(es)}",parent=self.root)
 
-
     def appscreen(self):
         Frame_login=Frame(self.root,bg="white")
         Frame_login.place(x=0,y=0,height=700,width=1366)
@@ -152,7 +150,7 @@ class Login:
 
         btn2=Button(Frame_login,text="Logout",command=self.loginform,cursor="hand2",font=("times new roman",15),fg="white",bg="orangered",bd=0,width=15,height=1)
         btn2.place(x=1000,y=10)
-
+        
     def regclear(self):
         self.entry.delete(0,END)
         self.entry2.delete(0,END)
